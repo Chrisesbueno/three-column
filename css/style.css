@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+}
+.container {
+    margin: 20px;
+    width: 350px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card {
+    padding: 2rem;
+}
+.card h1 {
+    font-family: 'Big Shoulders Display';
+    margin: 1.5rem 0;
+    color: var(--very-light-gray);
+}
+.card p {
+    color: var(--transparent-white);
+    line-height: 1.8em;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.card button {
+    background-color: var(--very-light-gray);
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    cursor: pointer;
+}
+.card button:hover {
+    border: 2px solid var(--very-light-gray);
+    background-color: rgba(0, 0, 0, 0);
+}
+.sedans {
+    background-color: var(--bright-orange);
+}
+.sedans button {
+    color: var(--bright-orange);
+}
+.sedans button:hover {
+    color: var(--very-light-gray);
+}
+.suvs {
+    background-color: var(--dark-cyan);
+}
+.suvs button {
+    color: var(--dark-cyan);
+}
+.suvs button:hover {
+    color: var(--very-light-gray);
+}
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+.luxury button:hover {
+    color: var(--very-light-gray);
+}
+/* CREDITS -START- */
+.attribution {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: var(--very-dark-cyan);
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--bright-orange);
+}
+.attribution a:hover {
+    color: var(--dark-cyan);
+}
+/* CREDITS -END- */
+@media screen and (min-width:768px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        width: 1050px;
+        display: flex;
+    }
+    .card p {
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+    }
+    .card h1 {
+        margin: 2.5rem 0;
+    }
+}
